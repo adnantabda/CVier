@@ -130,3 +130,20 @@ h2{
   } 
   
 }
+
+#download{
+  width: auto;
+  color: black;
+  background-color: #1f8b8d;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  border: 1px solid grey;
+  border-radius: 24px;
+  width: 150px;
+  cursor: pointer;
+
+}
+
+#download:active{
+  transform: scale(0.9);
+
+}
