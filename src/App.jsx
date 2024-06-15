@@ -8,6 +8,9 @@ import { useManageSkill, EditSkill, Skill } from './components/Skills';
 import { useManageProjectState, EditProject, Project } from './components/Projects';
 import { useManageHobby, EditHobby, Hobbies } from './components/Hobbies';
 
+import { DownloadPdf } from './components/DownloadCV';
+
+
 import './App.css';
 import './index.css';
 
@@ -93,7 +96,7 @@ function App() {
         <EditProject handleProjectName={handleProjectName} handleProjectDescription={handleProjectDescription}/>
         <EditHobby handleHobby={handleHobby} />
       </div>
-      <div className="output-cv">
+      <div id='content' className="output-cv">
         <Header
           name={name}
           title={title}
@@ -136,6 +139,7 @@ function App() {
           </div>
         </div>
       </div>
+      <DownloadPdf/>
     </div>
   );
 }
